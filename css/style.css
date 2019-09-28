@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.7;
+  color: #cfcfd1;
+  font-weight: 300;
+  font-size: 1rem;
+  /*background: #232531;*/
+  background: linear-gradient(to right, #ff0000, #d90000);
+  background: -webkit-linear-gradient(to right, #ff0000, #d90000);
+  background: -moz-linear-gradient(to right, #ff0000, #d90000);
+  background: -ms-linear-gradient(to right, #ff0000, #d90000);
+  background: -o-linear-gradient(to right, #ff0000, #d90000);
+  font-family: "Arial", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+}
+.nav {
+  font-size: 20px;
+}
+.text-black {
+  color: #000;
+}
+.red {
+  color: red;
+  font-weight: bold;
+}
+.white {
+  color: #fff;
+}
+.main-logo {
+  width: 200px;
+}
+.welcome {
+  max-width: 100%;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 2.6em;
+  font-weight: 700;
+  margin-top: 20px;
+  padding-left: 35px;
+}
+.wel-sign {
+  line-height: 1.2em;
+}
+.happy {
+  display: inline-block;
+  max-width: 100%;
+  color: #ff0000;
+  background: white;
+  padding: 0 10px;
+  transform: skewX(-15deg);
+}
+.text {
+  display: block;
+  color: #ffffff;
+  font-family: "Open Sans Light";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+}
+.evar-header {
+  background: url("/images/coin.svg") no-repeat,
+    url("/images/smile.svg") no-repeat;
+  background-position: left 80px, right 20px;
+  background-size: contain;
+}
+/*
+.center80 {
+  height: 80%;
+  align-items: center;
+}
+.center {
+  height: 100%;
+  align-items: center;
+}
+*/
+.red-head {
+  text-transform: uppercase;
+  color: red;
+  font-weight: 1000;
+}
+.cofe {
+  width: 870px;
+  margin-top: 2em;
+}
+.credit-card {
+  width: 400px;
+  margin-top: -50px;
+  z-index: -100;
+  transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  cursor: pointer;
+}
+.credit-card:hover {
+  transform: rotate(13deg);
+}
+.green-block {
+  color: #ffffff;
+  max-width: 650px;
+  font-family: "Arial Narrow - Bold Italic";
+  font-weight: 700;
+  padding: 10px;
+  background-color: #73bc00;
+  border-radius: 10px 10px 40px 30px;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+.girl {
+  width: 600px;
+  height: auto;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.girl:hover {
+  transform: scale(1.1);
+}
+.hands {
+  width: 666px;
+  height: auto;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.hands:hover {
+  transform: scale(1.1);
+}
+.cards {
+  width: 500px;
+  text-align: center;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.cards:hover {
+  transform: rotate(7deg);
+}
+.col-md-6 {
+  align-self: center;
+}
+p.sec-icons {
+  text-align: center;
+}
+.icons {
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+@media screen and (max-height: 640px) {
+  .text {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cofe {
+    display: none;
+  }
+  .girl {
+    display: none;
+  }
+  .hands {
+    display: none;
+  }
+  .carousel {
+    display: none;
+  }
+  .green-block {
+    font-size: inherit;
+  }
+  .txt15 {
+    font-size: 15px;
+  }
+  .h1,
+  h1 {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--<link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />-->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/jquery.pagepiling.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/cropped-1-32x32.png" sizes="32x32"> 
+    <link rel="icon" href="images/cropped-1-192x192.png" sizes="192x192">
+    <title>«Ёвар» &mdash; Сеть супермаркетов</title>
+  </head>
+  <body>
+    <div id="pagepiling">
+      <header class="section active evar-header">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <button
+              class="navbar-toggler"
+              data-toggle="collapse"
+              data-target="#collapse_target"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+              <img class="main-logo" src="images/logo.svg" />
+            </a>
+            <div id="collapse_target" class="collapse navbar-collapse">
+              <ul class="nav navbar-nav navbar-right ml-auto" id="myMenu">
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Личный кабинет</a>
+                </li>
+
+                <li data-menuanchor="firstPage" class="nav-item">
+                  <a class="nav-link" href="#loyal">Программа Лояльности</a>
+                </li>
+                
+                <li class="nav-item dropdown" data-menuanchor="secondPage">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    data-target="#dropdown-traget"
+                    href="#"
+                    >КАРТА «Ё»</a
+                  >
+                  <ul class="dropdown-menu" aria-labelledby="dropdown-traget">
+                    <a class="dropdown-item" href="#cardE">КАРТА «Ё»</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#block">Блокировка КАРТЫ «Ё»</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#restrict">Ограничения по КАРТЕ «Ё»</a>
+                  </ul>
+                </li>
+                <li class="nav-item" data-menuanchor="secondPage">
+                  <a class="nav-link" href="#cashback">КЭШБЕК</a>
+                </li>
+                <li class="nav-item" data-menuanchor="thirdPage">
+                  <a class="nav-link" href="#status">Статусы карты</a>
+                </li>
+                <li class="nav-item dropdown" data-menuanchor="secondPage">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      data-toggle="dropdown"
+                      data-target="#dropdown-traget"
+                      href="#"
+                      >Документы</a
+                    >
+                    <ul class="dropdown-menu" aria-labelledby="dropdown-traget">
+                      <a class="dropdown-item" href="#anketa">Анкета держателя КАРТЫ «Ё»</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Скачать правила</a>
+                    </ul>
+                  </li>
+                <li class="nav-item" data-menuanchor="fourthPage">
+                  <a class="nav-link" href="https://evar.tj/">«ЁВАР»</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="row center80">
+          <!--evar logo Ourtime -->
+          <div class="col-md-6">
+            <img
+              src="/images/advert.png"
+              alt="logo"
+              class="img img-fluid Etime"
+            />
+          </div>
+          <div class="welcome col-md-6">
+            <p id="terminal" class="wel-sign">Добро пожаловать,<br /><span class="happy">счастливый</span> Держатель<br />КАРТЫ «Ё»! </p>
+            <p class="text">
+              На этом портале ты найдешь всю нужную информацию об уникальной и
+              выгодной программе лояльности компании «Ёвар».
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <div class="section">
+        <div class="container-fluid">
+          <div class="row center">
+            <div class="col-md-4 mt-4">
+              <h1 id="cardE" class="red-head">Карта «Ё»</h1>
+              <p class="text-black">
+                Пластиковая карта с чипом, магнитной лентой,<br />
+                а так же с уникальным номером для<br />
+                индентификации покупателя с целью<br />
+                начисления и списания КЭШБЕКА. <br />
+                <br />
+                Стоимость КАРТЫ «Ё» <br />
+                состовляет <span class="red"> 20 сомони! </span><br />
+              </p>
+              <img
+                src="/images/credit-card.png"
+                alt="card"
+                class="img img-fluid credit-card"
+              />
+            </div>
+            <div class="col-md-8">
+              <img
+                src="images/card.png"
+                alt="Image"
+                class="img-fluid zoom cofe"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+          <div class="container-fluid">
+          <div class="row mt-5 center">
+             
+              <div class="col-md-6 text-black">
+                <h1 id="cashback" class="red-head">Кэшбэк</h1>
+                <p class="txt15">
+                  КЭШБЕК - это возврат наличных денег, зачислимых на баланс.
+                  Карты за совершенную покупку в одном из супермаркетов "«ЁВАР»".
+                  С каждой Вашей покупки с КАРТОЙ «Ё» на её баланс начисляется КЭШБЕК!
+                  <div class="green-block">
+                    С помощью накопленного КЭШБЕКА на КАРТЕ «Ё», Вы можете оплатить свою покупку до 100%* от суммы чека! 
+                  </div>
+                  Начисление КЭШБЕКА проводится при любом способе оплаты товаров:
+                  наличными, банковской картой и/или другими доступными законными 
+                  способами, кроме оплаты КЭШБЕКОМ!
+                </p>
+              </div>
+
+              <div class="col-md-6">
+              <img src="images/girl.png" alt="Image" class="img-fluid zoom girl">
+              </div>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="section">
+          
+          <div class="container-fluid">
+          <div class="row center mt-5">
+             
+              <div class="col-md-6">
+                <h1 class="red-head">Программа лояльности компании «ЁВАР»</h1>
+                <p class="text-black">
+                  Система поощрений постоянных покупателей сети супермаркетов «ЁВАР» за приверженность Бренду «ЁВАР» и развитие долгосрочных отношений!
+                  <div class="green-block">
+                    Чем больше и чаще покупатель совершает покупок, тем больше бонусов он получает!
+                  </div>
+                </p>
+              </div>
+  
+              <div class="col-md-6 center">
+              <img src="images/hands.png" alt="Image" class="img-fluid zoom hands">
+              </div>
+
+          </div>
+          </div>
+      </div>
+
+      <div class="section">
+          <div class="container-fluid">
+          <div class="row center mt-5">
+             
+              <div class="col-md-6">
+                <h1 id="status" class="red-head">Статуcы карты «Ё»</h1>
+            
+                <div class="green-block">
+                    В Программе Лояльности компании «ЁВАР» действуют 3 вида СТАТУСОВ КАРТЫ «Ё».
+                </div>
+                <p class="text-black">
+                    Для начисления КЭШБЕКА, необходимо чтобы Вы при совершении покупки предъявили кассиру свою КАРТУ «Ё» до момента оплаты покупки (закрытия кассового чека)!
+                </p>
+              </div>
+    
+              <div class="col-md-6">
+                <div class="carousel">
+                    <a class="carousel-item" href="#one!">
+                      <img src="images/stat1.png" alt="Image">
+                    </a>
+                    <a class="carousel-item" href="#two!">
+                      <img src="images/stat2.png" alt="Image">
+                    </a>
+                    <a class="carousel-item" href="#three!">
+                      <img src="images/stat3.png" alt="Image">
+                    </a>
+                </div>
+              </div>
+            </div>
+            </div>
+
+      </div>
+
+
+
+      <div class="section">
+          
+          <div class="container-fluid">
+          <div class="row center mt-5">
+             
+              <div class="col-md-6">
+                <h1 class="red-head">Анкета держателя КАРТЫ «Ё»</h1>
+                <p class="text-black">
+                    Это бумажная регистрационная форма, содержащая Ваши персональные данные и согласие на их обработку.
+                    <div class="green-block gb-1">
+                      Переданная Вами Анкета является основанием для активации Вашей КАРТЫ «Ё» и даёт право на доступ ко всем услугам действующей Программы Лояльности!
+                    </div>
+                </p>
+              </div>
+              
+              <div class="col-md-6 center">
+              <img src="images/anketa.png" alt="Image" class="img-fluid zoom hands">
+              </div>
+          </div>
+          </div>
+
+      </div>
+      <div class="section">
+
+          
+          <div class="container-fluid">
+          <div class="row center mt-5">
+             
+              <div class="col-md-6">
+                <h1 id="block" class="red-head">Блокировка Карты «Ё»</h1>
+                <div class="green-block">
+                    ! В случае, если Вы испортили или потеряли свою КАРТУ «Ё» необходимо её сразу заблокировать.
+                  </div> 
+                <p class="text-black"> 
+                    <span class="red">!</span> Для блокировки КАРТЫ «Ё» и последующего восстановления, накопленного КЭШБЭКА, Вам необходимо будет обратиться к Администрации любого супермаркета сети «ЁВАР» и написать заявление согласно установленному шаблону и прикрепить копию своего паспорта в обязательном порядке.
+                    <br>
+                    <br>
+                    <span class="red">!</span>  После покупки новой КАРТЫ «Ё», осуществления её активации и реализации необходимых процедур, баланс утерянной Карты на момент блокировки будет восстановлен и накопленный КЭШБЭК будет переведен на новую Вашу Карту.
+                </p>
+              </div>
+              
+              <div class="col-md-6">
+                <img src="images/blockCard.png" alt="Image" class="img-fluid zoom hands cards">
+              </div>
+
+              </div>
+            </div>
+              
+      </div>
+
+      <div class="section">
+        
+        <div class="container-fluid">
+        <div class="row mt-5">
+            
+            <div class="col-md-6">
+              <h1 id="restriction" class="red-head">Ограничения по карте «Ё»</h1>
+              <p  class="text-black">
+                <span class="red">1)</span> КЭШБЭК не начисляется при оплате покупок КЭШБЭКОМ!<br>
+                <span class="red">2)</span> КЭШБЭК НЕ начисляется на КАРТУ «Ё», а также НЕ списывается с Карты при покупке алкогольной и табачной продукции!<br>
+                <span class="red">3)</span> КЭШБЭК НЕ начисляется на КАРТУ «Ё», а также НЕ списывается с Карты при покупке товаров, реализующихся в сети супермаркетах «ЁВАР» по Акции, Скидке, Уценки и иных Спец. Предложениях, действующих на момент покупки!<br>
+                <span class="red">4)</span> КЭШБЭК НЕ начисляется на КАРТУ «Ё», в случае, если количество покупок в супермаркетах сети «ЁВАР» по 1 Карте за 1 сутки (24 часа) превышает <span class="red"> 10 покупок. </span><br> 
+                <span class="red">5)</span> Максимальный баланс 1 КАРТЫ «Ё» не должен превышать 70 000 (семьдесят тысяч) сомони.
+              </p>
+            </div>
+            <div class="col-md-6">
+            <img src="images/restrictions.png" alt="Image" class="img img-fluid zoom hands cards">
+            </div>
+        </div>
+        </div>
+      </div>
+
+
+      <div class="section">
+
+          <footer id="footer" class="site-footer">
+              <div class="container">
+                <div class="row mb-5">
+                  <div class="col-md-4">
+                    <h2 class="footer-heading red-head bold text-uppercase mb-4">КОНТАКТЫ</h2>
+                    <p class="white">Телефон:<br/>
+                      Email: info@evar.tj<br/>
+                      Прием отзывов и претензий:<br/></p>
+                  </div>
+                  <div class="col-md-3 ml-auto">
+                    <h2 class="footer-heading red-head text-uppercase mb-4">Навигация</h2>
+                    <ul class="list-unstyled">
+                      <li><a class="nav-link white" href="#firstPage">О компании</a></li>
+                      <li><a class="nav-link white" href="#secondPage">Наши торговые точки</a></li>
+                      <li><a class="nav-link white"  href="#sponsors">Партнеры</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4">
+                    <h2 class="footer-heading red-head text-uppercase mb-4">Мы в соц сетях</h2>
+                    <p class="sec-icons">
+                      <a class="icons white" href="#"><span class="fa fa-facebook"></span></a>
+                      <a class="icons white" href="#"><span class="fa fa-twitter"></span></a>
+                      <a class="icons white" href="#"><span class="fa fa-youtube"></span></a>
+                      <a class="icons white" href="#"><span class="fa fa-instagram"></span></a>
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  
+                    <div class="col-md-12 text-center">
+                      <div class="border-top pt-5">
+                      <p class="white" >
+                      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                      Copyright &copy; <script>document.write(new Date().getFullYear());</script> «Ёвар»</a>
+                      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+
+      </div>
+
+    </div>
+    <!--tag of pagepiling -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/main.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/jquery.pagepiling.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#pagepiling").pagepiling({
+          sectionsColor: ["#ED0000", '#FECF6A', '#00B4DB','#40E0D0','#FF8C00','#38ef7d','#fff','#fff','#666'],
+          scrollingSpeed: 400,
+          anchors: [
+            "firstPage",
+            "cardE",
+            "cashback",
+            "loyal",
+            "status",
+            'anketa',
+            'block',
+            'restrict',
+            'footer'
+          ],
+          menu: "#myMenu"
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.carousel');
+      var instances = M.Carousel.init(elems, {});
+  });</script>
+  </body>
+</html>
