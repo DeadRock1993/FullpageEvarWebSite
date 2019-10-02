@@ -14,80 +14,79 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="css/jquery.pagepiling.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="images/cropped-1-32x32.png" sizes="32x32"> 
     <link rel="icon" href="images/cropped-1-192x192.png" sizes="192x192">
     <title>«Ёвар» &mdash; Сеть супермаркетов</title>
   </head>
   <body>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#collapse_target"
+        >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="index.html" class="navbar-brand">
+          <img class="main-logo" src="images/logo.svg" />
+        </a>
+        <div id="collapse_target" class="collapse navbar-collapse">
+          <ul class="nav bg-col navbar-nav navbar-right ml-auto" id="myMenu">
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Личный кабинет</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#loyal">Программа Лояльности</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                data-target="#dropdown-traget"
+                href="#"
+                >КАРТА «Ё»</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="dropdown-traget">
+                <a class="dropdown-item" href="#cardE">КАРТА «Ё»</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#block">Блокировка КАРТЫ «Ё»</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#restrict">Ограничения по КАРТЕ «Ё»</a>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cashback">КЭШБЕК</a>
+            </li>
+            <li class="nav-item" data-menuanchor="thirdPage">
+              <a class="nav-link" href="#status">Статусы карты</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  data-target="#dropdown-traget"
+                  href="#"
+                  >Документы</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="dropdown-traget">
+                  <a class="dropdown-item" href="#anketa">Анкета держателя КАРТЫ «Ё»</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" target="_blank" href="/files/Правила ПЛ Ё.pdf">Скачать правила</a>
+                </ul>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://evar.tj/">«ЁВАР»</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     <div id="pagepiling">
       <header class="section active evar-header">
-        <div class="container-fluid">
-          <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-            <button
-              class="navbar-toggler"
-              data-toggle="collapse"
-              data-target="#collapse_target"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <a href="#" class="navbar-brand">
-              <img class="main-logo" src="images/logo.svg" />
-            </a>
-            <div id="collapse_target" class="collapse navbar-collapse">
-              <ul class="nav navbar-nav navbar-right ml-auto" id="myMenu">
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Личный кабинет</a>
-                </li>
-
-                <li data-menuanchor="firstPage" class="nav-item">
-                  <a class="nav-link" href="#loyal">Программа Лояльности</a>
-                </li>
-                
-                <li class="nav-item dropdown" data-menuanchor="secondPage">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    data-toggle="dropdown"
-                    data-target="#dropdown-traget"
-                    href="#"
-                    >КАРТА «Ё»</a
-                  >
-                  <ul class="dropdown-menu" aria-labelledby="dropdown-traget">
-                    <a class="dropdown-item" href="#cardE">КАРТА «Ё»</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#block">Блокировка КАРТЫ «Ё»</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#restrict">Ограничения по КАРТЕ «Ё»</a>
-                  </ul>
-                </li>
-                <li class="nav-item" data-menuanchor="secondPage">
-                  <a class="nav-link" href="#cashback">КЭШБЕК</a>
-                </li>
-                <li class="nav-item" data-menuanchor="thirdPage">
-                  <a class="nav-link" href="#status">Статусы карты</a>
-                </li>
-                <li class="nav-item dropdown" data-menuanchor="secondPage">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      data-toggle="dropdown"
-                      data-target="#dropdown-traget"
-                      href="#"
-                      >Документы</a
-                    >
-                    <ul class="dropdown-menu" aria-labelledby="dropdown-traget">
-                      <a class="dropdown-item" href="#anketa">Анкета держателя КАРТЫ «Ё»</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Скачать правила</a>
-                    </ul>
-                  </li>
-                <li class="nav-item" data-menuanchor="fourthPage">
-                  <a class="nav-link" href="https://evar.tj/">«ЁВАР»</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
         <div class="row center80">
           <!--evar logo Ourtime -->
           <div class="col-md-6">
@@ -104,8 +103,103 @@
               выгодной программе лояльности компании «Ёвар».
             </p>
           </div>
+          
+          <div class="col-md-1 margin-center top90">
+            <a href="#slider">
+              <img id="arrow-down" class="scroll" src="/images/scroll.svg" alt="scroll">
+            </a>
+          </div>
         </div>
       </header>
+
+      <!--carousel-->
+      <div class="section pp-scrollable">
+          <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="row swipeH100">
+                      <div class="col-md-6">
+                        <img class="img img-fluid" src="/images/buyEvar.png" alt="slide1">
+                      </div>
+                      <div class="col-md-6">
+                        <img class="img img-fluid" src="/images/slide1.png" alt="slide1">
+                      </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="swiper-slide">
+                        <div class="row swipeH100">
+                          <div class="col-md-6">
+                            <img class="img img-fluid" src="/images/coin.png" alt="slide1">
+                          </div>
+                          <div class="col-md-6">
+                            <img class="img img-fluid" src="/images/cash3.png" alt="slide1">
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="swiper-slide">
+                         <div class="row swipeH100">
+                           <div class="col-md-6">
+                             <img class="img img-fluid" src="/images/cash4.png" alt="slide1">
+                           </div>
+                           <div class="col-md-6">
+                             <img class="img img-fluid" src="/images/proc.png" alt="slide1">
+                           </div>
+                         </div>
+                       </div>
+                   </div>
+                   <div class="swiper-slide">
+                      <div class="swiper-slide">
+                         <div class="row swipeH100">
+                           <div class="col-md-3">
+                             <img class="steps img img-fluid" src="/images/buythings.png" alt="slide1">
+                           </div>
+                           <div class="col-md-3">
+                              <img class="steps img img-fluid" src="/images/getcashback.png" alt="slide1">
+                            </div>
+                           <div class="col-md-3">
+                             <img class="steps img img-fluid" src="/images/paywithcashback.png" alt="slide1">
+                           </div>
+                           <div class="col-md-3">
+                              <img class="steps img img-fluid" src="/images/offfers.png" alt="slide1">
+                           </div>
+                         </div>
+                       </div>
+                   </div>
+                   <div class="swiper-slide">
+                      <div class="swiper-slide">
+                         <div class="row swipeH100">
+                           <div class="col-md-6">
+                             <img class="img img-fluid" src="/images/morebuy.png" alt="slide1">
+                           </div>
+                           <div class="col-md-6">
+                             <img class="img img-fluid" src="/images/slide.png" alt="slide1">
+                           </div>
+                         </div>
+                       </div>
+                   </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+          
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev">
+                <i class="sliderbtn fa fa-caret-left"></i>
+              </div>
+              <div class="swiper-button-next">
+                <i class="sliderbtn fa fa-caret-right"></i>
+              </div>
+              
+              <!-- If we need scrollbar -->
+              <!--
+              <div class="swiper-scrollbar"></div>
+              -->
+          </div>
+      </div>
 
       <div class="section">
         <div class="container-fluid">
@@ -137,6 +231,8 @@
           </div>
         </div>
       </div>
+
+
       <div class="section">
           <div class="container-fluid">
           <div class="row mt-5 center">
@@ -252,10 +348,10 @@
              
               <div class="col-md-6">
                 <h1 id="block" class="red-head">Блокировка Карты «Ё»</h1>
-                <div class="green-block">
+                <div class="green-block txt13">
                     ! В случае, если Вы испортили или потеряли свою КАРТУ «Ё» необходимо её сразу заблокировать.
                   </div> 
-                <p class="text-black"> 
+                <p class="text-black txt13"> 
                     <span class="red">!</span> Для блокировки КАРТЫ «Ё» и последующего восстановления, накопленного КЭШБЭКА, Вам необходимо будет обратиться к Администрации любого супермаркета сети «ЁВАР» и написать заявление согласно установленному шаблону и прикрепить копию своего паспорта в обязательном порядке.
                     <br>
                     <br>
@@ -279,7 +375,7 @@
             
             <div class="col-md-6">
               <h1 id="restriction" class="red-head">Ограничения по карте «Ё»</h1>
-              <p  class="text-black">
+              <p  class="text-black txt13">
                 <span class="red">1)</span> КЭШБЭК не начисляется при оплате покупок КЭШБЭКОМ!<br>
                 <span class="red">2)</span> КЭШБЭК НЕ начисляется на КАРТУ «Ё», а также НЕ списывается с Карты при покупке алкогольной и табачной продукции!<br>
                 <span class="red">3)</span> КЭШБЭК НЕ начисляется на КАРТУ «Ё», а также НЕ списывается с Карты при покупке товаров, реализующихся в сети супермаркетах «ЁВАР» по Акции, Скидке, Уценки и иных Спец. Предложениях, действующих на момент покупки!<br>
@@ -301,26 +397,20 @@
               <div class="container">
                 <div class="row mb-5">
                   <div class="col-md-4">
-                    <h2 class="footer-heading red-head bold text-uppercase mb-4">КОНТАКТЫ</h2>
-                    <p class="white">Телефон:<br/>
-                      Email: info@evar.tj<br/>
-                      Прием отзывов и претензий:<br/></p>
+                    <h2 class="footer-heading red-head text-uppercase mb-4">КОНТАКТЫ</h2>
+                    <p class="white">
+                      Viber: (+992) 98 555 60 60<br/>
+                      Приём предложений:<br/> marketing@evar.tj<br/>
+                      Приём Резюме кандидатов на работу: hr@evar.tj<br/>
+                    </p>
                   </div>
                   <div class="col-md-3 ml-auto">
-                    <h2 class="footer-heading red-head text-uppercase mb-4">Навигация</h2>
-                    <ul class="list-unstyled">
-                      <li><a class="nav-link white" href="#firstPage">О компании</a></li>
-                      <li><a class="nav-link white" href="#secondPage">Наши торговые точки</a></li>
-                      <li><a class="nav-link white"  href="#sponsors">Партнеры</a></li>
-                    </ul>
+                    <h2 class="footer-heading red-head text-uppercase mb-4">Настало время «Ё»</h2>
                   </div>
                   <div class="col-md-4">
                     <h2 class="footer-heading red-head text-uppercase mb-4">Мы в соц сетях</h2>
                     <p class="sec-icons">
-                      <a class="icons white" href="#"><span class="fa fa-facebook"></span></a>
-                      <a class="icons white" href="#"><span class="fa fa-twitter"></span></a>
-                      <a class="icons white" href="#"><span class="fa fa-youtube"></span></a>
-                      <a class="icons white" href="#"><span class="fa fa-instagram"></span></a>
+                      <a class="icons white" target="_blank" href="https://www.facebook.com/evar.tj"><span class="fa fa-facebook"></span></a>
                     </p>
                   </div>
                 </div>
@@ -345,20 +435,41 @@
     <!--tag of pagepiling -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/materialize.min.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="js/main.js"></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.pagepiling.min.js"></script>
+    <script>
+    var mySwiper = new Swiper('.swiper-container', {
+    speed: 400,
+    effect:'flip',
+    autoplay: {
+    delay: 3000,
+    },
+    loop:true,
+    grabCursor:true,
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    }
+    });
+    var mySwiper = document.querySelector('.swiper-container').swiper
+    $(window).on('resize', function() {
+    mySwiper.update();
+    }).trigger('resize');
+</script>
     <script>
       $(document).ready(function() {
         $("#pagepiling").pagepiling({
-          sectionsColor: ["#ED0000", '#FECF6A', '#00B4DB','#40E0D0','#FF8C00','#38ef7d','#fff','#fff','#666'],
-          scrollingSpeed: 400,
+          sectionsColor: ["#ED0000", '#FFF', '#fff','#fff','#fff','#fff','#fff','#fff','#fff','#666'],
+          scrollingSpeed: 700,
           anchors: [
             "firstPage",
+            'slider',
             "cardE",
             "cashback",
             "loyal",
@@ -372,10 +483,5 @@
         });
       });
     </script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-      var elems = document.querySelectorAll('.carousel');
-      var instances = M.Carousel.init(elems, {});
-  });</script>
   </body>
 </html>

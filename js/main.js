@@ -14,6 +14,7 @@ $("ul.nav li.dropdown").hover(
       .fadeOut(500);
   }
 );
+
 $(document).ready(function() {
   //type
   //type
@@ -56,4 +57,11 @@ $(document).ready(function() {
     return this;
   };
   $("#terminal").typewriter();
+
+  window.onload = function() {
+    $(".carousel").carousel({
+      indicators: false,
+      duration: 50
+    });
+  };
 });
